@@ -1,4 +1,4 @@
-# UsePopCorn
+# React Quiz
 
 This project builds a quiz about React
 
