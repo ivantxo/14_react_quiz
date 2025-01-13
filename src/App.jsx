@@ -1,8 +1,21 @@
 import Header from "./Header";
 import Body from "./Body";
-import { useEffect } from "react";
+import { useEffect, useReducer } from "react";
+
+const initialState = {
+  questions: [],
+  // loading, error, ready, active, finished
+  status: "loading",
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+  }
+}
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   useEffect(function () {
     fetch("http://localhost:9000/questions")
       .then((res) => res.json())
