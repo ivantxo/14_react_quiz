@@ -1,4 +1,4 @@
-import Options from "./assets/Options";
+import Options from "./Options";
 
 function Question({ question }) {
   return (
